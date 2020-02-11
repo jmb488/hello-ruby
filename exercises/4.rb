@@ -18,12 +18,16 @@
 
 weather_data = {
   current: {
-    temperature: 67,
-    conditions: "Sunny"
+    temperature: 33,
+    conditions: "Mostly Cloudy"
   },
   forecast: [
-    { temperature: 65, conditions: "Mostly Cloudy" },
-    { temperature: 70, conditions: "Partly Cloudy" }
+    { temperature: 32, conditions: "Sunny" },
+    { temperature: 37, conditions: "Snow Showers" }
   ]
 }
 
+puts "Monday's Weather Report"
+puts "Today, conditions are #{weather_data[:current][:conditions]} with a high of #{weather_data[:current][:temperature]}"
+puts "Tuesday's forecast: #{weather_data[:forecast][0][:conditions]}, with an expected high of #{weather_data[:forecast][0][:temperature]}"
+puts "Wednesday's forecast: #{weather_data[:forecast][1][:conditions]}, with an expected high of #{weather_data[:forecast][1][:temperature]}"

@@ -15,3 +15,17 @@
 # Learn to read the documentation!
 # http://ruby-doc.org/core-2.5.1/Array.html
 
+
+J_shopping_list = ["steak", "potatoes", "kale", "beer"]
+E_shopping_list = ["cucumber", "carrots", "iced tea", "beer"]
+Combined_list = J_shopping_list + E_shopping_list
+Sorted_list = Combined_list.sort
+Unique_list = Sorted_list.uniq
+
+# puts "Jeff's shopping list:"
+# puts J_shopping_list
+# puts "Elizabeth's shopping list:"
+# puts E_shopping_list
+puts "Our combined shopping list:"
+puts Unique_list
+
